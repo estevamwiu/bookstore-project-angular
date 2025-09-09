@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BooksComponent } from './books-component/books-component';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    BooksComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
