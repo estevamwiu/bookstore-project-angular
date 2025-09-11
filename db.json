@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "books": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925,
+      "edition": "Novecentos",
+      "genre": "Terror"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "edition": "Novecentos",
+      "genre": "Terror"
+    },
+    {
+      "id": 3,
+      "title": "",
+      "author": "",
+      "year": "",
+      "edition": "",
+      "genre": ""
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

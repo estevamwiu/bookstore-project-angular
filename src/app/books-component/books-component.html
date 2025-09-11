@@ -1,40 +1,42 @@
 <div class = "container">
-    <div class="display-4 text-center" class = "font">Livraria - Fatec Itu</div>
+    <div class="display-4 text-center" class = "font">Sistema de Cadastro de Livros</div>
 <form [formGroup]="formGroupBooks">
+
     <div class="mb-3">
       <label for="InputId" class="form-label">ID</label>
-      <input type="id" class="form-control" id="InputId" formControlName="id">
+      <input formControlName="id" type="text" class="form-control" id="InputId">
     </div>
 
   <div class="mb-3">
     <label for="InputTitle" class="form-label">Título do Livro</label>
-    <input type="text" class="form-control" id="InputTitle" formControlName="title">
+    <input formControlName="title" type="text" class="form-control" id="InputTitle">
   </div>
 
   <div class="mb-3">
     <label for="InputAuthor" class="form-label">Autor</label>
-    <input type="text" class="form-control" id="InputAuthor" formControlName="author">
+    <input formControlName="author" type="text" class="form-control" id="InputAuthor">
   </div>
 
 <div class="mb-3">
     <label for="InputYear" class="form-label">Ano</label>
-    <input type="text" class="form-control" id="InputYear" formControlName="year">
+    <input formControlName="year" type="text" class="form-control" id="InputYear">
   </div>
 
     <div class="mb-3">
     <label for="InputEdition" class="form-label">Editora</label>
-    <input type="text" class="form-control" id="InputEdition" formControlName="edition">
+    <input formControlName="edition" type="text" class="form-control" id="InputEdition">
   </div>
 
     <div class="mb-3">
     <label for="InputGenre" class="form-label">Gênero</label>
-    <input type="text" class="form-control" id="InputGenre" formControlName="genre">
+    <input formControlName="genre" type="text" class="form-control" id="InputGenre">
   </div>
 
-  <button type="submit" class="btn btn-primary" (click)="save()">Salvar</button>
+  <button type="submit" class="btn" (click)="save()" style="background-color: #B83737; color: white;">Cadastrar</button>
+
 </form>
 <br>
-  <h5>📚 Livros Cadastrados:</h5>
+  <h5 class = "font2">Livros Cadastrados:</h5><br>
   <table class="table">
     <thead>
       <tr>
